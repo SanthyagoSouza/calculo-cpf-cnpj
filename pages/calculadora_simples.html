@@ -12,7 +12,7 @@
     <section>
         <div id="tipo_operacao">
             <div>
-                <form action="">
+                <form id="tipo-calculo" action="">
                     <input type="radio" value="1" name="tipo" id="soma">
                     <label for="">Soma (+)</label>
                     <input type="radio" value="2" name="tipo" id="sub">
@@ -23,18 +23,32 @@
                     <label for="">Multiplicação (*)</label>
                 </form>
             </div>
+         
             <div>
-                <form action="">
-                    <label for="">tem mais de um valor</label>
-                    <label for="">Sim</label>
-                    <input type="radio" name="c" id="">
-                    <label for="">Não</label>
-                    <input type="radio" name="c" id="">
+                <form id="valores-calculo">
+                    <input id="x" type="number">
+
+                    <input id="y" type="number">
+
+                    <label for="">Resultado</label>   <input id="r" type="number" disabled>
+                    <input type="submit">
                 </form>
             </div>
-
         </div>
     </section>
+
+    <script>
+
+        const soma = document.querySelector("#soma").value;
+        const sub = document.querySelector("#sub").value;
+        const div = document.querySelector("#div").value;
+        const mul = document.querySelector("#mul").value;
+
+            
+
+
+
+    </script>
 </body>
 
 </html>
